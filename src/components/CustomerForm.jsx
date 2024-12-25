@@ -39,7 +39,7 @@ export function CustomerForm({ initialData, onSubmit, onCancel }) {
 
     const finalFormData = {
       ...formData, 
-      gender: formData.gender === 'Other' ? customGender : formDataGender,
+      gender: formData.gender === 'Other' ? customGender : formData.gender,
     }; 
     onSubmit(finalFormData);
   };
